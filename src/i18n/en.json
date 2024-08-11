@@ -1,0 +1,40 @@
+{
+    "navigation": {
+        "langauges": {
+            "es": "Spanish",
+            "en": "English"
+        },
+        "select": {
+            "label": "Choose a language"
+        }
+    },
+    "home": {
+        "title": "Home",
+        "welcome": "Welcome!",
+        "intro_line_1": "My name is { Ramiro Mazzucco Giusseppin },",
+        "intro_line_2": "fullstack web/movil developer.",
+        "projects": "Projects"
+    },
+    "about": {
+        "presentation_letter": {
+            "title": "About me",
+            "text_line_1": "Welcome and thank you for visit my web site.",
+            "text_line_2": "My name is Ramiro but everyone call´s me 'Rama'. I use to programming since 3 years. I developing web and movile aplications since then, with angular, ionic and node. I´m also use to develop of APIs with node, nestjs and express in lesser extent, although my orientation is towards to frontend than to backend.",
+            "text_line_3": "Fortunately I found something to dedicate myself to with pleasure, but it was not always like this...",
+            "text_line_4": ""
+        },
+        "studies_qualifications": {
+            "title": "My studies and qualifications"
+        },
+        "buttons": {
+            "presentation_letter": "Presentation letter",
+            "studies_qualifications": "Studies and qualifications"
+        }
+    },
+    "contactme": {
+        "title": "Contact me",
+        "form": {
+            
+        }
+    }
+}

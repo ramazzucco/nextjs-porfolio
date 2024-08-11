@@ -1,0 +1,105 @@
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+    z-index: 1000;
+}
+
+.menu .content {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background: var(--blue-tint);
+    padding-top: 32px;
+}
+.menu .content.w100 {
+    width: 100%;
+}
+
+.dark .menu .content {
+    background: var(--blue-dark);
+}
+
+.menu .content .select_container {
+    width: 250px;
+    opacity: 0;
+}
+
+.menu.show {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    background: rgba(0, 0, 0, 0.33);
+    backdrop-filter: blur(3px);
+    animation: fade 0.3s ease-in forwards;
+}
+
+.menu.show .select_container {
+    animation: fade 0.3s 0.3s forwards;
+}
+
+.menu .menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 0 12px 0;
+    padding: 20px;
+    z-index: 1;
+}
+
+.menu .checkbox_container {
+    opacity: 0;
+}
+
+.menu.show .checkbox_container {
+    animation: fade 0.3s 0.3s ease-in forwards;
+}
+
+.menu .content .wrapper_links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    z-index: 0;
+}
+.menu .content .closeMenu {
+    background: none;
+    border: none;
+    color: #fff;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+.dark .menu .content .closeMenu {
+    color: var(--blue-tint);
+}
+.menu .content .closeMenu:hover {
+    color: var(--blue-3);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes enter_top {
+    0% {
+        translate: 0 -100px;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}

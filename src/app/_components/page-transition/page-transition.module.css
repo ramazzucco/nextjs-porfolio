@@ -1,0 +1,22 @@
+.bars {
+    width: 0;
+    height: calc(100% / 5);
+    position: absolute;
+    left: 0%;
+    background: #000;
+    animation: page_transition 0.6s;
+}
+
+@keyframes page_transition {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}

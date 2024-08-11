@@ -1,0 +1,27 @@
+.brand {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.brand .logo {
+    display: grid;
+    place-items: center;
+    margin-left: 12px;
+}
+
+/* .brand .logo img {
+    width: 50px;
+} */
+
+.brand .title {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: var(--blue-tint);
+    user-select: none;
+}
+
+.dark .brand .title {
+    color: rgba(var(--blue-rgb), 0.93);
+}

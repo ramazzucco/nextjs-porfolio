@@ -1,0 +1,86 @@
+.wrapper_select {
+    position: relative;
+    display: flex;
+}
+
+.wrapper_select button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blue-1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem;
+    gap: 12px;
+    color: #fff;
+}
+.dark .wrapper_select button {
+    background-color: var(--blue-tint);
+}
+
+.wrapper_select button .icon {
+    transition: 0.3s linear;
+}
+
+.wrapper_select button .icon.up {
+    rotate: 0deg;
+}
+
+.wrapper_select button .icon.down {
+    rotate: 180deg;
+}
+
+.wrapper_select .content_select {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--blue-2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dark .wrapper_select .content_select {
+    background: var(--blue-tint);
+}
+
+.wrapper_select .content_select.open {
+    height: auto;
+    padding: 12px 0;
+    opacity: 1;
+    box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.wrapper_select .content_select span.option {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.wrapper_select .content_select span.option.selected {
+    background-color: rgba(0, 0, 0, 0.133);
+}
+
+.wrapper_select .content_select span.option label {
+    cursor: pointer;
+}
+
+.wrapper_select .content_select span.option:hover {
+    background-color: rgba(0, 0, 0, 0.033);
+}
+
+/* .wrapper_select .content_select span.option img {
+    width: 33px;
+} */

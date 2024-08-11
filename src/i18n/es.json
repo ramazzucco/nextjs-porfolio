@@ -1,0 +1,51 @@
+{
+    "navigation": {
+        "langauges": {
+            "es": "Español",
+            "en": "Ingles"
+        },
+        "select": {
+            "label": "Seleccione un idioma"
+        }
+    },
+    "home": {
+        "title": "Pagina principal",
+        "welcome": "Bienvenidos!",
+        "intro_line_1": "Mi nombre es { Ramiro Mazzucco Giusseppin },",
+        "intro_line_2": "desarrollador fullstack web/movil.",
+        "projects": "Proyectos"
+    },
+    "about": {
+        "presentation_letter": {
+            "title": "Acerca de mi",
+            "text_line_1": "Bienvenído y gracias por visitar mi sitio web,",
+            "text_line_2": "Mi nombre es Ramiro pero todo el mundo me llama 'Rama', me dedico a la programación desde hace ya 3 años. Desde entonces desarrollo aplicaciones web y moviles principalmente con angular, ionic y node. Tambien me dedico al desarrollo de apis con node, nestjs y express en menor medida, aunque mi orientación es un poco mas frontend que backend.",
+            "text_line_3": "Por fortuna encontre algo a lo que dedicarme con gusto, pero no siempre fue asi...",
+            "text_line_4": "Cuando era chico soñaba con ser jugardor de fútbol, pero la mala fortuna y malas decisiones hicieron que no fuera posible. Desde entonces e pasado por vários empleos, estudios y cursos, buscando un nuevo rumbo, hasta que lo encontre en la programación. En ella encuentro satisfaccion en la creación de interfaces de usuario, y podria estar todo el dia programando con mucho gusto, por lo que puedo garantizar un plena dedicacion, además de que soy muy bueno trabajndo en equipo ya que soy colaborativo y me gusta ayudar a los demás. Espero que mi perfil sea de tu agrado, de ser asi no dudes en contactarme, de lo contrario, suerte con tu busqueda, Saludos."
+        },
+        "studies_qualifications": {
+            "title": "Mis estudios y aptitudes"
+        },
+        "buttons": {
+            "presentation_letter": "Carta de presentación",
+            "studies_qualifications": "Estudio y aptitudes"
+        }
+    },
+    "contactme": {
+        "title": "Contactar me",
+        "form": {
+            "name": {
+                "label": "Nombre",
+                "placeholder": "Ingrese su nombre"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Ingrese su email"
+            },
+            "message": {
+                "label": "Mensaje",
+                "placeholder": "Ingrese su mensaje"
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.navContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 35% 50% 15%;
+    align-items: center;
+    background: #fff;
+    border-bottom: 2px solid rgba(var(--blue-rgb), 0.133);
+}
+
+.dark .navContainer {
+    background: rgba(var(--blue-dark-rgb), 0.93);
+}
+
+.button_menu {
+    width: 48px;
+    height: 48px;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+    color: var(--blue-tint);
+    margin-right: 12px;
+}
+.dark .button_menu {
+    color: rgba(var(--blue-rgb), 0.93);
+}
+
+.button_menu:hover {
+    background: rgba(var(--blue-rgb), 0.133);
+}
+
+@media (max-width: 768px) {
+    .navContainer {
+        grid-template-columns: 85% 1% 15%;
+    }
+}

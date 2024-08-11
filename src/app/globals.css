@@ -1,0 +1,136 @@
+:root {
+    --ash-gray: #acbdba;
+    --azure: #cddddd;
+    --rose-quartz: #a599b5;
+    --jet: #2e2f2f;
+    --rich-black: #051014;
+
+    --blue-rgb: 100, 95, 206;
+    --blue-1: #645fce;
+    --blue-2: #837fd7;
+    --blue-3: #a29fe1;
+    --blue-tint: #665d8b;
+    --blue-dark: #1b172f;
+    --blue-dark-rgb: 27, 23, 47;
+
+    --navbar: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container_page {
+    overflow: hidden;
+}
+
+.container_page.light {
+    background: #f7f2f2;
+    color: var(--blue-tint);
+}
+
+.container_page.dark {
+    background: var(--blue-dark);
+    color: var(--blue-3);
+}
+
+.scroll::-webkit-scrollbar {
+    width: 18px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #fff;
+    /* color of the tracking area */
+}
+.dark .scroll::-webkit-scrollbar-track {
+    background: var(--blue-dark);
+    /* color of the tracking area */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: var(--blue-tint);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #fff;
+    /* creates padding around scroll thumb */
+}
+.dark .scroll::-webkit-scrollbar-thumb {
+    border-color: var(--blue-dark);
+    background-color: var(--blue-3);
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.pulsate-fwd {
+    -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

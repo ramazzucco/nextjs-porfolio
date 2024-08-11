@@ -1,0 +1,164 @@
+.about {
+    width: 100%;
+    height: 90vh;
+    opacity: 0;
+    overflow: hidden;
+    animation: fade 0.5s 0.6s ease-in forwards;
+}
+
+.about .about__content {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: auto;
+}
+
+.about .about__content .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    opacity: 0;
+    padding: 50px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    min-height: 90vh;
+    max-height: 90vh;
+    overflow: hidden;
+    transition: 0.3s 0.3s ease-in-out;
+}
+
+.about.dark .content {
+    background: var(--blue-dark);
+}
+
+.about .about__content .content.show {
+    min-height: 90vh;
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.about.dark .about__content {
+    background: rgba(var(--blue-rgb), 0.133);
+    box-shadow: rgba(220, 220, 220, 0.11) 0px 1px 4px;
+}
+
+.about .about__content .text h1 {
+    margin-bottom: 50px;
+}
+
+.about .about__content .text h4 {
+    margin-bottom: 20px;
+}
+
+.about .about__content .text p {
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+
+.about .about__content .buttons {
+    position: fixed;
+    bottom: 12px;
+    left: 25%;
+    translate: 3px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.about .about__content .buttons button {
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 12px;
+    border: none;
+    background: none;
+    color: var(--blue);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.about .about__content .buttons button.left {
+    left: -50%;
+}
+
+.about .about__content .buttons button.right {
+    right: -50%;
+}
+
+.about .about__content .buttons button.show {
+    bottom: 0;
+}
+
+.about .about__content .buttons button:hover .icon {
+    -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+
+.about .about__content .buttons button:active .icon {
+    -webkit-animation: none;
+    animation: none;
+}
+
+.about .about__content .buttons button .icon {
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+}
+
+.about .about__content .buttons button .title {
+    font-size: 18px;
+}
+
+.about .signature {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about .signature img {
+    /* width: 200px; */
+    rotate: 15deg;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.about.dark .signature img {
+    filter: invert(1);
+}
+
+@media (max-width: 1099px) {
+    .about .about__content .content {
+        width: 75%;
+    }
+    .about .about__content .buttons button .title {
+        max-width: none;
+        opacity: 0;
+        background: var(--blue-3);
+        box-shadow:
+            rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+            rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    .about .about__content .buttons button:hover .title {
+        opacity: 1;
+    }
+    .about.dark .about__content .buttons button .title {
+        color: var(--blue-dark);
+    }
+}
+
+@media (max-width: 768px) {
+    .about .about__content .content {
+        width: 100%;
+    }
+}

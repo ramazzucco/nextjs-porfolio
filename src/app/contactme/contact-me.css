@@ -1,0 +1,97 @@
+.container_page.contactme {
+    width: 100%;
+    height: 90vh;
+    opacity: 0;
+    animation: fade 0.5s 0.6s ease-in forwards;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.container_page.contactme h1 {
+    text-align: center;
+}
+
+.container_page.contactme .wrapper_form {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 50px 0;
+}
+
+.container_page.contactme .wrapper_form form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_page.contactme .wrapper_form form .form_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+    gap: 8px;
+}
+
+.container_page.contactme .wrapper_form form .form_item label {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.container_page.contactme .wrapper_form form .form_item label span.icon {
+    visibility: hidden;
+}
+
+.container_page.contactme .wrapper_form form .form_item label span.icon.focus {
+    visibility: visible;
+    animation: icons 0.7s ease infinite;
+}
+
+.container_page.contactme
+    .wrapper_form
+    form
+    .form_item
+    label
+    span.icon.visible {
+    visibility: visible;
+}
+
+.container_page.contactme .wrapper_form form .form_item input {
+    height: 48px;
+    border-radius: 5px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid rgba(var(--blue-rgb), 0.133);
+    outline: none;
+}
+
+.container_page.contactme .wrapper_form form .form_item textarea {
+    height: 200px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 8px;
+    outline: none;
+    border: 2px solid rgba(var(--blue-rgb), 0.133);
+}
+
+.container_page.contactme.dark .wrapper_form form .form_item input,
+.container_page.contactme.dark .wrapper_form form .form_item textarea {
+    background: var(--blue-tint);
+    box-shadow: rgba(var(--blue-rgb), 0.33) 0px 0px 0px 2px;
+}
+
+@keyframes icons {
+    0% {
+        translate: 20px 0;
+    }
+
+    100% {
+        translate: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_page.contactme .wrapper_form form {
+        width: 100%;
+    }
+}
